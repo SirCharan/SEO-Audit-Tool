@@ -122,8 +122,8 @@ print(co-coo)
 
 links=[]
 i=0
-sub='https://henryharvin'
-suba='https://www.henryharvin.com/'
+sub=page.split('/')[1]
+suba='opt'
 for a in soup.findAll('a'):
     b=a.get('href')
     d=b.count(suba)+b.count(sub)
